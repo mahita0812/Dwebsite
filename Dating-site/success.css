@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 150px;
+    background-color: rgb(218, 154, 7);
+    padding-bottom: 10px;
+}
+
+main{
+    padding-top: 15px;
+    background-color: linen;
+}
+
+header img{
+    height: 135px;
+    width: 180px;
+    margin-left: 180px;
+    
+}
+
+.horizontal-list{
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.horizontal-list li a:hover{
+    color: #06828c;
+}
+
+#success-nav:active{
+    color:#f7f8fc;
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.horizontal-list button{
+    padding: 5px;
+    color: white;
+    background-color: orangered;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100px;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+.horizontal-list button:hover{
+    background-color: rgb(255, 91, 31);
+}
+
+.cont1{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.box{
+    background-color: linen;
+    box-shadow: 7px 8px 5px -1px black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.img-cont{
+    height: 300px;
+    width: 350px;
+}
+
+.text-center{
+    text-align: center;
+    color: orangered;
+    margin-top: 50px;
+}
+
+
+.text-center:hover{
+    color: rgb(255, 91, 31);
+}
+
+.head-img{
+    width:80%;
+}
+
+.head-img img{
+    margin-left: 255px;
+    margin-top: 20px;
+    position: relative;
+    height: 400px;
+    width: 1000px;
+    opacity: 0.9;
+    box-shadow: 0px 5px 15px 0px black;
+}
+
+.true{
+    top: 35rem;
+    position: absolute;
+    left: 30rem;
+}
+
+.box p{
+    color: orangered;
+}
+
+.address p{
+    font-size: 15px;
+    color: #0e464b;
+}
+
+
+/* suiiiiiiiiiiiiiiiiiiiiiii */
+
+.container7{
+	background-color: orange;
+	padding: 20px;
+	color: white;
+	text-align:center;
+}
+
+.container6{
+    margin-top: 100px;
+	background-color:rgb(218, 154, 7);
+	display: flex;
+	justify-content: space-evenly;
+	padding:20px;
+    padding-top: 50px;
+}
+
+.container6 li{
+    list-style: none;
+    line-height: 35px;
+}
+
+.container6 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+

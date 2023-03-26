@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0px;
+            position: relative;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: right;
+        }
+
+        .lib {
+            padding-left: 180px;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+        }
+
+        .top {
+            float: left;
+            padding-left: 20px;
+        }
+
+        .left {
+            margin-top: -100vh;
+            height: 100vh;
+            width: 50%;
+            position: relative;
+            background-color: aquamarine;
+        }
+
+        .right {
+            right: 0;
+            background-image: url("./static/c12.jpg");
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 50%;
+            margin-left: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .lib a {
+            color: rgb(55, 43, 4);
+        }
+
+        ul a {
+            color: aliceblue;
+        }
+
+        ul a:hover:focus {
+            color: rgb(6, 136, 93);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .button a {
+            padding: 5px;
+            color: black;
+            background-color: orange;
+            font-weight: bold;
+            font-size: 17px;
+            width: 90px;
+            border-radius: 3px;
+            border-style: hidden;
+            cursor: pointer;
+        }
+
+        .button a:hover {
+            background-color: rgb(255, 91, 31);
+        }
+
+        .wp-block-group .wp-block-group__inner-container {
+            margin: 0 auto;
+            max-width: 600px;
+            padding-left: 500px;
+            position: relative;
+        }
+
+        .img {
+            float: left;
+            padding-left: 150px;
+            padding-top: 50px;
+            width: 50%;
+        }
+
+        .text {
+            float: right;
+        }
+
+        .design {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 500px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(150deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: #555;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        header{
+    height: 150px;
+    background-color: rgb(218, 154, 7);
+    padding-bottom: 10px;
+}
+
+main{
+    padding-top: 15px;
+    background-color: linen;
+}
+
+header img{
+    height: 130px;
+    width: 180px;
+    margin-left: 150px;
+}
+
+.horizontal-list{
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.horizontal-list li a:hover{
+    color: #06828c;
+}
+
+#success-nav:active{
+    color:#f7f8fc;
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table{
+    background-color: lightslategrey;
+}
+    </style>
+</head>
+
+<body>
+    <header >
+        <a href="index.html" class="logo me-auto"><img src="./static/logo.png" alt=""></a>
+        <div class="horizontal-list">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="local.html">Local Dating</a></li>
+                <li><a href="advice.html">Dating Advice</a></li>
+                <li><a href="tour.html" id="success-nav">Tour</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="split right">
+        
+    </div>
+
+
+    <div class="left">
+        <div class="lib">
+            <br>
+            <h1>HeartHeaven: Here for real love</h1>
+            <p>Dating is a journey with ups and downs. But all <br> the effort is worth it when you meet someone <br>
+                special.
+                So, when you decide it's time to find that <br> meaningful relationship, HeartHeaven is here for you.</p>
+            
+
+            <br><br>
+            <b>LET'S GET STARTED</b><br><br>
+            <a href="#work">1. How does HeartHeaven work?</a><br><br>
+            <a href="#mobile">2. Perfect Matching: Where Compatibility Meets Connection</a><br><br>
+            <a href="#box">3. Why HeartHeaven is worth it</a><br><br>
+            <a href="#fact">4. We're all about love, and that's a fact.</a><br><br>
+            <a href="#member">6. Find the membership that works for you</a><br><br>
+            <a href="#communication">7. How to communicate on HeartHeaven</a><br>
+        </div>
+    </div>
+
+    <!-- changes -->
+    <div id="work" style="background-color: lavender; padding-top: 12px;">
+        <center>
+            <h1>How does HeartHeaven work</h1></b>
+        </center>
+        <center>
+            <table width="120" height="100" cellpadding="20px">
+                <tr>
+                    <td>
+                        <div class="wp-block-column wp-block-column--has-image">
+                            <figure class="wp-block-image aligncenter size-large"><img decoding="async" width="160"
+                                    height="160" src="./static/webp.png" alt="" class="wp-image-1554"
+                                    sizes="(max-width: 160px) 100vw, 160px"></figure>
+                            <br>
+                            <h3 class="has-text-align-center has-main-brand-200-color has-text-color"
+                                id="1-learn-about-yourself">1. LEARN ABOUT YOURSELF</h3>
+                            <p class="has-text-align-center">See how our process uses an in-depth <a
+                                    href="/tour/what-is-the-compatibility-quiz/">Compatibility Quiz</a> and <a
+                                    href="/tour/profile/">Personality Profile</a> so you discover more about yourself
+                                and what matters most to you in a relationship.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wp-block-column wp-block-column--has-image">
+                            <figure class="wp-block-image aligncenter size-large"><img decoding="async" width="160"
+                                    height="160" src="./static/intern.gif" alt="" class="wp-image-1554"
+                                    sizes="(max-width: 160px) 100vw, 160px"></figure>
+                            <br>
+                            <h3 class="has-text-align-center has-main-brand-200-color has-text-color"
+                                id="1-learn-about-yourself">2. DISCOVER YOUR MATCHES</h3>
+                            <p class="has-text-align-center">In your Match List you'll have access to each match's
+                                profile so you can better understand who they are and what they want. The list will be
+                                updated as new members join, so you'll never miss an opportunity to fall in love.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wp-block-column wp-block-column--has-image">
+                            <figure class="wp-block-image aligncenter size-large"><img decoding="async" width="160"
+                                    height="160" src="./static/couple.png" alt="" class="wp-image-1554"
+                                    sizes="(max-width: 160px) 100vw, 160px"></figure>
+                            <br>
+                            <h3 class="has-text-align-center has-main-brand-200-color has-text-color"
+                                id="1-learn-about-yourself">3. MAKE A MEANINGFUL CONNECTION</h3>
+                            <p class="has-text-align-center">We've made making the first move easier than ever with our
+                                communication tools. So, if you're not sure where to begin, try sending a smile or an
+                                icebreaker to get the conversation started.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <div class="table">
+        <table cellspacing="150px" cellpadding="30px">
+                <tr>
+                    <td>
+                        <img width="500" height="300" src="static/hh.png"></img>
+                    </td>
+                    <td><b>
+                            <center>THE HEARTHEAVEN EXPERIENCE</center>
+                        </b><br>
+                        <center>We specialize in compatibility. <br> See how our process reveals more <br> about
+                            yourself and what you want in a <br> relationship. That way you find the one <br> thing
+                            you've been looking for: real love.</center>
+                        <br><br><br>
+                        <center><button class="button"><a href="login.html">JOIN NOW</a></button></center>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        
+
+    </div>
+    <div id="mobile" class="img">
+        <img src="https://www.eharmony.com/wp-content/uploads/2021/12/eharmony-matching.png">
+    </div>
+    <div>
+        <div style="background-color: rgb(218, 154, 7); padding-bottom: 20px;" class="wp-block-group text-container">
+
+            <div class="wp-block-group__inner-container"><br><br><br>
+                <h1 class="has-white-100-color has-text-color">Perfect Matching: Where Compatibility Meets Connection
+                </h1>
+                <p class="has-white-100-color has-text-color">At HeartHeaven we offer the opportunity to experience real
+                    love through our Compatibility Matching System. We give each of our members the ability to find
+                    compatibility and connection through these features:</p>
+                <p class="is-style-default has-white-100-color has-text-color">• Our Compatibility Quiz produces a <a
+                        href="/tour/what-is-compatibility-system/"
+                        title="/tour/what-is-compatibility-system/">Compatibility Score</a> that breaks down what
+                    you&#8217;re looking for in a partner based on your interests, habits, and life goals.</p>
+                <p class="is-style-default has-white-100-color has-text-color">• A Personality Profile helps you
+                    understand how you and your matches matches connect while also allowing you to discover more about
+                    yourself.</p>
+                <p class="has-white-100-color has-text-color">Our mission is to create real love by connecting people
+                    based on what really matters. We believe that love is all about a shared spark. If you&#8217;re
+                    ready to experience real love for yourself &#8211; we&#8217;re ready for you.</p>
+                <br><br><br>
+                <center><button class="button"><a href="login.html">BECOME A PREMIER MEMBER</a></button></center>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="box" style="background-color: lavender; padding-bottom: 20px;">
+        <br>
+        <center>
+            <h2>WHY HEARTHEAVEN IS WORTH IT</h2>
+        </center>
+        <div class="design">
+            <center>For over 20 years we've made it our purpose to create authentic relationships, because love is
+                something that everyone deserves. Just ask any of the 2 million people who have met and fell in love on
+                HeartHeaven.</center>
+        </div><br><br>
+        <center>
+            <table cellpadding="10px">
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRycoUu_W8CJ9tUXdKsMYl8H7wu9fWs8Ap8Yg&usqp=CAU"
+                            width="250" height="250">
+                    </td>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-BMIu0es0MUUQT0MOnXwj-bJXy0YUZP2KKS_0W6hYmkvHKWeYMuwAk6-PjQcPLWOKYk&usqp=CAU"
+                            width="250" height="250">
+                    </td>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyf7qk4eU0lIcF3_51laurOR93BvE_mnJgQ&usqp=CAU"
+                            width="250" height="250">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://quotestats.com/topic/443384-eharmony-quotes-176846.jpg" width="250"
+                            height="250">
+                    </td>
+                    <td>
+                        <img src="./static/c6.webp" width="250" height="250">
+                    </td>
+                    <td>
+                        <img src="https://i0.wp.com/hellohappie.com/wp-content/uploads/2020/07/eharmony.png?resize=600%2C160&ssl=1"
+                            width="250" height="250">
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <center><button class="button"><a href="login.html">FIND LOVE NOW</a></button></center>
+        </center>
+    </div>
+
+    <div id="fact" style="background-color: rgb(218, 154, 7); padding-bottom: 100px; font-size: 22px;">
+        <br><br><br><br><br>
+        <center>
+            <h1>WE'RE ALL ABOUT LOVE, AND THAT'S A FACT.</h1><br>
+            <p>We don't have a type. HeartHeaven members <br> represent individuals of all ages and <br> demographics.
+                People who use HeartHeaven are <br> seeking meaningful relationships based on <br> something deeper than
+                just looks, likes, <br> and location. They're here for love. Just like you.</p>
+            <br><br><button class="button"><b><a href="login.html">JOIN NOW</a></b></button>
+        </center>
+    </div>
+
+    <div id="member" style="background-color: lavender; padding-bottom: 20px;">
+        <br>
+        <center>
+            <h1>FIND THE MEMBERSHIP THAT WORKS FOR YOU</h1>
+        </center><br>
+        <div class="design">
+            <center>When it comes to finding the right person, we know it can take some time but finding real love is an
+                investment that pays out. We have memberships that are designed to allow you to take the time you need
+                to get to know your matches. See which one best fits your lifestyle and find out more about the cost of
+                HeartHeaven for your membership.</center>
+        </div><br>
+        <center>
+            <table cellpadding="10px" cellspacing="10px" bgcolor="orange">
+                <tr>
+                    <td bgcolor="white">
+                        <center>HEARTHEAVEN BASIC</center>
+                    </td>
+                    <td bgcolor="orange">
+                        <center>HEARTHEAVEN PREMIUM</center>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Access to millions of relationship-minded singles</td>
+                    <td>Access to millions of relationship-minded singles</td>
+                </tr>
+                <tr>
+                    <td>Unlimited matches</td>
+                    <td>Unlimited matches</td>
+                </tr>
+                <tr>
+                    <td>Use of all communication tools: Smiles, Icebreakers & Greetings</td>
+                    <td>Use of all communication tools: Smiles, Icebreakers & Greetings</td>
+                </tr>
+                <tr>
+                    <td>Limited messaging</td>
+                    <td>Limited messaging</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                        View unlimited photos<br><br><br>
+                        Video Date feature<br><br><br>
+                        See who's viewed you<br><br><br>
+                        Distance search<br><br><br>
+                        Detailed Personality Profile<br><br><br>
+                        Dedicated customer service
+                    </td><br>
+                </tr>
+            </table>
+            <br><br><br>
+            <center><button class="button"><a href="login.html">FIND LOVE NOW</a></button></center>
+        </center>
+    </div>
+
+    <div id="communication" style="padding-bottom: 20px; background-color: aquamarine;font-size: 22px;">
+        <br><br><br>
+        <center><b>HOW TO COMMUNICATE ON HEARTHEAVEN</b></center><br>
+        <center>We know that communication is key. So, here are some of our most important features:</center><br>
+        <center>
+            <table cellpadding="10px">
+                <tr>
+                    <td>
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <br>
+                                    <cenetr>ICEBREAKERS</cenetr><br><br>
+                                    <img src="./static/icebreak.png" alt="Paris" style="width:300px;height:500px">
+                                </div>
+                                <div class="flip-box-back">
+                                    <br><br><br><br><br><br><br><br>
+                                    <h2>ICEBREAKERS</h2>
+                                    <p>Take the guess work out of saying hello through the HeartHeaven messaging system. We
+                                        provide interactive icebreakers to help start the conversation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <br>
+                                    <cenetr>SMILES</cenetr><br><br>
+                                    <img src="./static/smile.png" alt="Paris" style="width:300px;height:500px">
+                                </div>
+                                <div class="flip-box-back">
+                                    <br><br><br><br><br><br><br><br>
+                                    <h2>SMILES</h2>
+                                    <p>Sometimes all it takes a smile, so we’ve found a way to make that unspeakable
+                                        spark go virtual.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <br>
+                                    <cenetr>VIDEO DATE</cenetr><br><br>
+                                    <img src="./static/video.png" alt="Paris" style="width:300px;height:500px">
+                                </div>
+                                <div class="flip-box-back">
+                                    <br><br><br><br><br><br><br><br>
+                                    <h2>VIDEO DATE</h2>
+                                    <p>Say goodbye to the stress of first dates and say hello to a convenient way to
+                                        date from the comfort of your home.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </center><br><br><br><br>
+        <center>If you want to dive deeper and exhaust all possibilities to improve your HeartHeaven experience, you'll
+            find interesting articles in our HeartHeaven tips category.</center><br>
+            <center><button class="button"><a href="login.html">JOIN NOW</a></button></center><br>
+    </div>
+</body>
+
+</html>
